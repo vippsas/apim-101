@@ -17,13 +17,6 @@ try {
 }
 catch { }
 
-function IsInstalled {
-  param (
-    [string]$Module
-  )
-  return (Get-InstalledModule -Name $Module -ErrorAction "SilentlyContinue") -as [bool]
-}
-
 # Connecting to tenant/account
 Connect-AzAccount -SubscriptionId $SubscriptionId -Tenant $TenantId
 $LoggedInUser = (Get-AzContext).Account.Id
