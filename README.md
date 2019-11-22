@@ -22,15 +22,13 @@ https://petstore.swagger.io/
 
 ## Policies in Azure API Management
 
-### Replace one endpoint with a static response
-
 https://github.com/Azure/api-management-policy-snippets
 
+* Replace one endpoint with a static response
 * Add correlation id to inbound request
 * Make sure your API can handle high traffic
 * Call out to an HTTP endpoint and cache the response
 * Filter response content based on product name
 * Canary Deployment
-12:00 Lunch
 
 ## Maintenance in Azure API Management
