@@ -45,6 +45,6 @@ New-AzResourceGroup -Name $ResourceGroupName -Location $Location -Tag @{Owner=$L
 Start-Job -ArgumentList $ResourceGroupName,$Name,$Location,$LoggedInUser -ScriptBlock {
   param($ResourceGroupName, $Name, $Location, $LoggedInUser)
   New-AzApiManagement -ResourceGroupName $ResourceGroupName -Name $Name -Sku "Consumption" -Location $Location -Organization "MyOrganization" -AdminEmail $LoggedInUser
-  Write-Host "Provisioning resources. Check in a few minutes."
+  Write-Host "Provisioning API Management instance. Check in a few minutes."
 }
 
