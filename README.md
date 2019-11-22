@@ -1,5 +1,7 @@
 # API Management 101
 
+This repository contains presentations and source code that is used for internal workshops on Azure API Management.
+
 ## Understanding Azure API Management
 
 ### Introduction
