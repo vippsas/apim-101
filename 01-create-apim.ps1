@@ -34,7 +34,7 @@ if ($Delete) {
   Remove-AzApiManagement -ResourceGroupName $ResourceGroupName -Name $Name
   Remove-AzResourceGroup -Name $ResourceGroupName
 
-  Write-Host "Resources deleted."
+  Write-Host -ForegroundColor Green "Resources deleted."
   EXIT 0
 }
 
@@ -45,6 +45,6 @@ New-AzResourceGroup -Name $ResourceGroupName -Location $Location -Tag @{Owner=$L
 Start-Job -ArgumentList $ResourceGroupName,$Name,$Location,$LoggedInUser -ScriptBlock {
   param($ResourceGroupName, $Name, $Location, $LoggedInUser)
   New-AzApiManagement -ResourceGroupName $ResourceGroupName -Name $Name -Sku "Consumption" -Location $Location -Organization "MyOrganization" -AdminEmail $LoggedInUser
-  Write-Host "Provisioning API Management instance. Check in a few minutes."
+  Write-Host -ForegroundColor Green "Provisioning API Management instance ... check in a few minutes."
 }
 
