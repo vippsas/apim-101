@@ -6,7 +6,7 @@ This repository contains presentations and source code that is used for internal
 
 ### Introduction
 
-[What you need to know to get started with Azure API Management](http://notYetDefined.com)
+What you need to know to get started with Azure API Management [ppt](http://notYetDefined.com)
 
 ### Provision APIM Consumption
 
@@ -20,7 +20,7 @@ This repository contains presentations and source code that is used for internal
 
 ## Policies in Azure API Management
 
-[Introduction to policies](http://notYetDefined.com)
+Introduction to policies [ppt](http://notYetDefined.com)
 
 ### Working with NamedValues
 
