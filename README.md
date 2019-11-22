@@ -12,13 +12,11 @@ This repository contains presentations and source code that is used for internal
 
 ### Applying Swagger file
 
-### Create a product and assign your API
+### Create a product and assign API
 
 ### Create a user
 
 ### Create a subscription
-
-### Test the API
 
 ## Policies in Azure API Management
 
