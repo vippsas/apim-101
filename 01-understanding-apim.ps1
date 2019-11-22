@@ -74,7 +74,7 @@ try {
 catch { }
 
 # Connecting to tenant/account
-##Connect-AzAccount -SubscriptionId $SubscriptionId -Tenant $TenantId
+Connect-AzAccount -SubscriptionId $SubscriptionId -Tenant $TenantId
 $LoggedInUser = (Get-AzContext).Account.Id
 $Location = "West Europe"
 
