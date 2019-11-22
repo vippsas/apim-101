@@ -24,7 +24,7 @@ function IsInstalled {
   return (Get-InstalledModule -Name $Module -ErrorAction "SilentlyContinue") -as [bool]
 }
 
-# Connecting to account
+# Connecting to tenant/account
 Connect-AzAccount -SubscriptionId $SubscriptionId -Tenant $TenantId
 $LoggedInUser = (Get-AzContext).Account.Id
 $Location = "West Europe"
@@ -38,8 +38,8 @@ if ($Delete) {
   EXIT 0
 }
 
-# Create new resource group with tags
-New-AzResourceGroup -Name $ResourceGroupName -Location $Location -Tag @{Owner=$LoggedInUser; Deletable="Anytime"; Reason="apim 101 session"}
+# Create new resource group with meaningful tags
+New-AzResourceGroup -Name $ResourceGroupName -Location $Location -Tag @{Owner=$LoggedInUser; Deletable="Anytime"; Reason="APIM 101 Session"}
 
 # Create API Management instance in the background since the cmdlet takes a while to return.
 Start-Job -ArgumentList $ResourceGroupName,$Name,$Location,$LoggedInUser -ScriptBlock {
