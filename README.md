@@ -4,13 +4,11 @@
 
 ### Introduction
 
+[What you need to know to get started](http://notYetDefined.com)
+
 ### Provision APIM Consumption
 
-### Applying the Pet Store Swagger file
-
-### Create a simple policy for the api- set backend service
-
-https://petstore.swagger.io/
+### Applying Swagger file
 
 ### Create a product and assign your API
 
@@ -22,8 +20,13 @@ https://petstore.swagger.io/
 
 ## Policies in Azure API Management
 
+### Working with NamedValues
+
+### Workshop tasks
+
 https://github.com/Azure/api-management-policy-snippets
 
+* Replace response urls
 * Replace one endpoint with a static response
 * Add correlation id to inbound request
 * Make sure your API can handle high traffic

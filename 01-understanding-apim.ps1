@@ -74,15 +74,14 @@ try {
 catch { }
 
 # Connecting to tenant/account
-Connect-AzAccount -SubscriptionId $SubscriptionId -Tenant $TenantId
+##Connect-AzAccount -SubscriptionId $SubscriptionId -Tenant $TenantId
 $LoggedInUser = (Get-AzContext).Account.Id
 $Location = "West Europe"
 
 # Delete resources
 if ($Delete) {
+  Write-Host -ForegroundColor Green "Deleting resources."
   Remove-AzResourceGroup -Name $ResourceGroupName
-
-  Write-Host -ForegroundColor Green "Resources deleted."
   EXIT 0
 }
 
@@ -101,5 +100,5 @@ $apimContext = New-AzApiManagementContext -ResourceGroupName $ResourceGroupName 
 Write-Host -ForegroundColor Green "Applying Petstore swagger specification to API Management instance."
 $ApiId = "PetstoreAPI"
 $Path = "petstore"
-$SwaggerfileUrl = "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml"
-Import-AzApiManagementApi -Context $apimContext -SpecificationFormat "OpenApi" -SpecificationUrl $SwaggerfileUrl -Path $Path -ApiId $ApiId 
+$SwaggerfileUrl = "https://conferenceapi.azurewebsites.net?format=json"
+Import-AzApiManagementApi -Context $apimContext -SpecificationFormat "Swagger" -SpecificationUrl $SwaggerfileUrl -Path $Path -ApiId $ApiId
