@@ -2,7 +2,7 @@
 
 ## Understanding Azure API Management
 
-### Short introduction
+### Introduction
 
 ### Provision APIM Consumption
 
