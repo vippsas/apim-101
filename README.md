@@ -21,10 +21,10 @@ In this task we'll deploy 3 APIs that we will need in the task that follows.
 
 1. Deploy the famous [conference API](https://conferenceapi.azurewebsites.net?format=json) to your APIM instance with PowerShell and test it from your favorite browser.
 1. Deploy the [petstore api](https://petstore.swagger.io/v2/swagger.json) to your APIM instance directly from within the Azure Portal.
-1. Create an own API called `PaymentsAPI` with a basic GET endpoint directly from within in the Azure Portal. This API won't do much since it is missing an actual implementation yet. We will fix this in a later task.
+1. Create an own API called `payments API` with a basic GET endpoint directly from within in the Azure Portal. This API won't do much since it is missing an actual implementation yet. We will fix this in a later task.
 
 ### Task 4: Secure your APIs
-Create two users. One user is an iOS developer that has written an App that shows Microsoft conferences. He needs only access to your ConferenceAPI. The other user represents your own Android App that implements a pet store. This client need access to the PetstoreAPI and the PaymentsAPI. In this task you will need to look at products.
+Create two users. One user is an iOS developer that has written an App that shows Microsoft conferences. He needs only access to your `conference API`. The other user represents your own Android App that implements a pet store. This client need access to the `petstore API` and the `payments API`. In this task you will need to look at products.
 
 ## Policies in Azure API Management
 
