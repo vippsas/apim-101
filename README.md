@@ -24,7 +24,7 @@ In this task we'll deploy 3 APIs that we will need in the following tasks.
 1. Create an own API called `PaymentsAPI` with a basic GET endpoint directly from within in the Azure Portal. This API won't do much since it is missing an actual implementation yet. We will fix this in a later task.
 
 ### Task 4: Secure your APIs
-Create 2 users. One user is an iOS developer that has written an App that shows Microsoft conferences. He needs only access to your ConferenceAPI. The other user represents your own Android App that implements a pet store. This client need access to the PetstoreAPI and the PaymentsAPI. In this task you will need to look at products.
+Create two users. One user is an iOS developer that has written an App that shows Microsoft conferences. He needs only access to your ConferenceAPI. The other user represents your own Android App that implements a pet store. This client need access to the PetstoreAPI and the PaymentsAPI. In this task you will need to look at products.
 
 ## Policies in Azure API Management
 
