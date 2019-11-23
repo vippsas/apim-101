@@ -41,4 +41,5 @@ In a few weeks is a large Microsoft event with lots of great speakers. Every tim
 
 ## Maintenance in Azure API Management
 
+## References
 [1](https://github.com/Azure/api-management-policy-snippets)
