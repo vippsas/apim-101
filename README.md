@@ -17,9 +17,9 @@ Make sure that you can open a console from your Azure Portal.
 Use PowerShell from the console in the Azure Portal. Provision an instance of APIM and make sure that whatever you will provision in this workshop will be deleted later together. Choose the purchasable Stock Keeping Unit (SKU) that bills per execution.
 
 ### Task 3: Deploy 3 APIs in 3 different ways
-In this task we'll deploy 3 APIs that we will need in the following tasks.
+In this task we'll deploy 3 APIs that we will need in the task that follows.
 
-1. Deploy the famous [conference API](ttps://conferenceapi.azurewebsites.net?format=json) to your APIM instance with PowerShell and test it from your favorite browser.
+1. Deploy the famous [conference API](https://conferenceapi.azurewebsites.net?format=json) to your APIM instance with PowerShell and test it from your favorite browser.
 1. Deploy the [petstore api](https://petstore.swagger.io/v2/swagger.json) to your APIM instance directly from within the Azure Portal.
 1. Create an own API called `PaymentsAPI` with a basic GET endpoint directly from within in the Azure Portal. This API won't do much since it is missing an actual implementation yet. We will fix this in a later task.
 
@@ -36,12 +36,12 @@ Introduction to policies [(PowerPoint)](http://notYetDefined.com)
 
 https://github.com/Azure/api-management-policy-snippets
 
-* Replace response urls
-* Replace one endpoint with a static response
-* Add correlation id to inbound request
-* Make sure your API can handle high traffic
-* Call out to an HTTP endpoint and cache the response
-* Filter response content based on product name
-* Canary Deployment
+1. Replace one endpoint with a static response
+1. Replace response urls
+1. Add correlation id to inbound request
+1. Make sure your API can handle high traffic
+1. Call out to an HTTP endpoint and cache the response
+1. Filter response content based on product name
+1. Canary Deployment
 
 ## Maintenance in Azure API Management
