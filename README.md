@@ -30,18 +30,15 @@ Create two users. One user is an iOS developer that has written an App that show
 
 Introduction to policies [(PowerPoint)](http://notYetDefined.com)
 
-### Working with NamedValues
+### Task 5: Mock the payments API
+The payments API doesn't have an implementation yet. In this task we will mock its response with policies. To make it easy to change the response text later, we define the response text as a placeholder. We use Named values for that.
 
-### Workshop tasks
+### Task 6: Change URLs in the response
+The response from our petstore API and the one from the conference API contain their original URLs, not the one from our API Management instance. Let's replace those URLs to our public URL.
 
-https://github.com/Azure/api-management-policy-snippets
-
-1. Replace one endpoint with a static response
-1. Replace response urls
-1. Add correlation id to inbound request
-1. Make sure your API can handle high traffic
-1. Call out to an HTTP endpoint and cache the response
-1. Filter response content based on product name
-1. Canary Deployment
+### Task 7: Make sure petstore API can handle high traffic
+In a few weeks is a large Microsoft event with lots of great speakers. Every time there is a large Microsoft event, lots of clients will probably use our conference API, especially the `/sessions` endpoint. We need to make sure that our API Gateway won't overload this endpoint. In this task, we will use throttling for the `/sessions` endpoint only.
 
 ## Maintenance in Azure API Management
+
+[1](https://github.com/Azure/api-management-policy-snippets)
