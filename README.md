@@ -6,7 +6,9 @@ This repository contains presentations and source code that is used for internal
 
 ### Introduction
 
-What you need to know to get started with Azure API Management [(PowerPoint)](http://notYetDefined.com)
+What you need to know to get started with Azure API Management [(PowerPoint)](http://notYetDefined.com).
+
+In the following tasks, we will create an API Gateway for our customers that want to use APIs that we manage.
 
 ### Task 1: Setup
 Make sure that you can open a console from your Azure Portal.
@@ -19,7 +21,7 @@ In this task we'll deploy 3 APIs that we will need in the following tasks.
 
 1. Deploy the famous [conference API](ttps://conferenceapi.azurewebsites.net?format=json) to your APIM instance with PowerShell and test it from your favorite browser.
 1. Deploy the [petstore api](https://petstore.swagger.io/v2/swagger.json) to your APIM instance directly from within the Azure Portal.
-1. Create an own API called `PaymentsAPI` with a basic GET endpoint directly from within in the Azure Portal.
+1. Create an own API called `PaymentsAPI` with a basic GET endpoint directly from within in the Azure Portal. This API won't do much since it is missing an actual implementation yet. We will fix this in a later task.
 
 ### Task 4: Secure your APIs
 Create 2 users. One user is an iOS developer that has written an App that shows Microsoft conferences. He needs only access to your ConferenceAPI. The other user represents your own Android App that implements a pet store. This client need access to the PetstoreAPI and the PaymentsAPI. In this task you will need to look at products.
