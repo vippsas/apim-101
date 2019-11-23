@@ -8,15 +8,21 @@ This repository contains presentations and source code that is used for internal
 
 What you need to know to get started with Azure API Management [(PowerPoint)](http://notYetDefined.com)
 
-### Provision APIM Consumption
+### Task 1: Setup
+Make sure that you can open a console from your Azure Portal.
 
-### Applying Swagger file
+### Task 2: Provision an instance of Azure API Management
+Use PowerShell from the console in the Azure Portal. Provision an instance of APIM and make sure that whatever you will provision in this workshop will be deleted later together. Choose the purchasable Stock Keeping Unit (SKU) that bills per execution.
 
-### Create a product and assign API
+### Task 3: Deploy 3 APIs in 3 different ways
+In this task we'll deploy 3 APIs that we will need in the following tasks.
 
-### Create a user
+1. Deploy the famous [conference API](ttps://conferenceapi.azurewebsites.net?format=json) to your APIM instance with PowerShell and test it from your favorite browser.
+1. Deploy the [petstore api](https://petstore.swagger.io/v2/swagger.json) to your APIM instance directly from within the Azure Portal.
+1. Create an own API called `PaymentsAPI` with a basic GET endpoint directly from within in the Azure Portal.
 
-### Create a subscription
+### Task 4: Secure your APIs
+Create 2 users. One user is an iOS developer that has written an App that shows Microsoft conferences. He needs only access to your ConferenceAPI. The other user represents your own Android App that implements a pet store. This client need access to the PetstoreAPI and the PaymentsAPI. In this task you will need to look at products.
 
 ## Policies in Azure API Management
 
