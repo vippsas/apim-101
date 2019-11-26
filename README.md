@@ -6,7 +6,7 @@ This repository contains presentations and source code that is used for internal
 
 ### Introduction
 
-What you need to know to get started with Azure API Management [(PowerPoint)](http://notYetDefined.com).
+What you need to know to get started with Azure API Management [(PowerPoint)](apim-101-introduction.pptx).
 
 In the following tasks, we will create an API Gateway for our customers that want to use APIs that we manage.
 
