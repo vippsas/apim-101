@@ -13,6 +13,7 @@ New-AzResourceGroup -Name $ResourceGroupName -Location $Location -Tag @{Owner=$L
 
 $apimContext = New-AzApiManagementContext -ResourceGroupName $ResourceGroupName -ServiceName $Name
 
+New-AzApiManagementLogger -Context $apimContext -Name "smatest" -ConnectionString "Endpoint=sb://smatest.servicebus.windows.net/;SharedAccessKeyName=smatest;SharedAccessKey=HGwWBNN4t21AeWwL3XoWZsYowmRf7whYa6xgLrQhf0M=;EntityPath=smatest-eh"
 
 New-AzApiManagement -ResourceGroupName $ResourceGroupName -Name $Name -Sku "Consumption" -Location $Location -Organization "MyOrganization" -AdminEmail $LoggedInUser
 $apimContext = New-AzApiManagementContext -ResourceGroupName $ResourceGroupName -ServiceName $Name
